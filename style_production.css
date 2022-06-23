@@ -136,57 +136,56 @@ main{
     color: #4d555a;
 }
 
-main img{
-    margin-top: 1rem;
-}
-
 main h1{
     color: #007aff;
     margin: 1rem 0 0.6rem;
 }
 
-main h4{
-    margin: 1rem 0 0.5rem;
-}
-
-main .center_heading {
-    margin-top: 5%;
-    text-align: center;
-}
-main li{
-    list-style: disc;
-    list-style-position: inside;
-}
-
-.block_worth{
+.block_productions{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    border-bottom:solid 4px #005cbf;
 }
 
-.block_worth .block_worth_item{
+.block_production_item{
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center; 
     align-items: center;
-    width: 30%;
+    width: 22%;
+    height: 250px;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
     box-shadow: 0px 0px 10px 1px #495162;
-
+    transition: .4s ease;
+}
+.block_productions:last-child{
+border-bottom: none;
 }
 
-main .block_worth img{
-    filter: invert(1);
+.block_production_item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.block_production_item img{
+    filter: invert(20%) sepia(76%) saturate(3211%) hue-rotate(200deg) brightness(95%) contrast(102%);
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
 }
 /* ================= END OF MAIN=============================== */
 /* =================FOOTER===================================== */
 footer{
     /* position: fixed; */
-
     width: 100%;
     height: 8%;
     background: #4d555ab9;
