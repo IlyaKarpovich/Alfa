@@ -164,6 +164,15 @@ main h1{
     box-shadow: 0px 0px 10px 1px #495162;
     transition: .4s ease;
 }
+
+.block_production_item a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 333;
+}
+
 .block_productions:last-child{
 border-bottom: none;
 }

@@ -9,17 +9,19 @@ text-decoration: none;
 list-style-type: none;
 font-family: 'Poppins', sans-serif;
 }
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
+body{
+    /* display: flex; */
+    /* flex-direction: column; */
     width: 100%;
-    height: 100vh;
+    height: 100%;
     color: #cedde6;
 }
 
+
+/* =================HEADER====================== */
+
 header{
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     width: 100%;
     height: 12%;
@@ -69,12 +71,15 @@ color: #000000;
 nav ul li a:visited{
 color: inherit;
 }
+/* =================END OF HEADER====================== */
 
+/* =================SWIPER============================= */
 .swiper {
-    /* position: relative; */
+    /* position: absolute; */
     width: 100%;
-    height: 100%;
-    text-align: center;
+    height: 550px;
+    border-bottom:3px solid #0404ea;
+    /* text-align: center; */
 }
 .swiper-wrapper{
     /* position: relative; */
@@ -88,22 +93,22 @@ color: inherit;
     /* display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex; */
-    display: flex;
+    /* display: flex; */
     /* -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center; */
-    justify-content: center;
+    /* justify-content: center; */
     /* -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center; */
-    align-items: center;
+    /* align-items: center; */
 }
 
 .swiper .swiper-wrapper .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center top ;
 }
 
 /* .swiper .swiper-wrapper .swiper-slide span{
@@ -122,59 +127,67 @@ color: inherit;
     transform: translate(90%, -180%);
 } */
 
-.tagline{
-    top: 0;
-    right: 0;
-    /* bottom: 15%; */
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    z-index: 3333;
-    background: url(img/bg-slide-title.png) ;
-    background-position: contain;
-    filter: invert(1);
-}
-
-.tagline h1{
-    position: absolute;
-    filter: invert(1);
-    font-size: 2rem;
-    right: 3%;
-    top: 60%;
+/* =================END OF SWIPER============================= */
+/* =================MAIN====================================== */
+main{
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #4d555a;
 }
 
 
-
-.news_block {
-    background: #4d555a;
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.news_block_item {
-    width: 23%;
-}
-
-.news_block_item h3{
-    font-weight: 500;
-}
-
-.news_block_item a, a:visited, a:active{
+main h1{
     color: #007aff;
-    text-decoration: none;
-    list-style: none;
-    font-weight: 500;
+    margin: 1rem 0 0.6rem;
 }
 
+main li{
+margin-bottom: 0.6rem;
+font-size: 1.1rem;
+}
+
+main li span{
+font-weight: bolder; 
+font-size: 1.1rem;
+}
+
+main .advantage{
+    border: 4px solid #007aff;
+    margin-bottom: 1.5rem;
+}
+
+main .advantage ul,p{
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+main .advantage li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+main .specifications{
+    background: url(../prdct/konveernoe/belt.jpg);
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.disk_decoration_items{
+    margin-bottom: 3%;
+}
+
+li.disk_decoration_item{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+/* ================= END OF MAIN=============================== */
+/* =================FOOTER===================================== */
 footer{
     /* position: fixed; */
-    display: none;
-    bottom: 0%;
+
     width: 100%;
     height: 8%;
-    background: #4d555ab8;
+    background: #4d555ab9;
     z-index: 2;
 }
 
@@ -182,7 +195,7 @@ footer ul{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     color: #fff;
     font-size: 0.7rem;
@@ -190,5 +203,5 @@ footer ul{
 
 footer ul li{
     cursor: pointer;
-    width: 23%;
 }
+/* =================END OF FOOTER===================================== */
