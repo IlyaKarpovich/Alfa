@@ -108,7 +108,7 @@ color: inherit;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center top ;
 }
 
 /* .swiper .swiper-wrapper .swiper-slide span{
@@ -140,46 +140,24 @@ main{
 main h1{
     color: #007aff;
     margin: 1rem 0 0.6rem;
+    font-weight: 500;
 }
 
 main li{
 margin-bottom: 0.6rem;
 font-size: 1.1rem;
+list-style-type: disc;
+list-style-position: inside;
 }
 
-main li span{
-font-weight: bolder; 
-font-size: 1.1rem;
+main p{
+    margin-bottom: 10%;
 }
 
-main .advantage{
-    border: 4px solid #007aff;
-    margin-bottom: 1.5rem;
+main p span{
+    color:  #005cbf;
 }
 
-main .advantage ul,p{
-    margin: 1.5rem 0 1.5rem 2rem;
-}
-
-main .advantage li{
-    list-style-type: disc;
-    list-style-position: inside;
-}
-
-main .specifications{
-    background: url(../prdct/konveernoe/belt.jpg);
-    display: flex;
-    justify-content: space-between;
-}
-
-ul.disk_decoration_items{
-    margin-bottom: 3%;
-}
-
-li.disk_decoration_item{
-    list-style-type: disc;
-    list-style-position: inside;
-}
 /* ================= END OF MAIN=============================== */
 /* =================FOOTER===================================== */
 footer{
