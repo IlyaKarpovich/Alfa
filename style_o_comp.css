@@ -70,7 +70,7 @@ cursor: pointer;
 color: #000000;
 }
 
-nav ul li a:visited{
+nav ul li a, a:visited{
 color: inherit;
 }
 /* =================END OF HEADER====================== */
