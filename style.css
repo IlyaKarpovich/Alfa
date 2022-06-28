@@ -165,7 +165,7 @@ color: inherit;
 }
 
 .news_block_item a, a:visited, a:active{
-    color: #007aff;
+    color: inherit;
     text-decoration: none;
     list-style: none;
     font-weight: 500;
