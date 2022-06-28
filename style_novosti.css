@@ -129,6 +129,50 @@ color: inherit;
 
 /* =================END OF SWIPER============================= */
 /* =================MAIN====================================== */
+
+
+
+
+
+
+
+/*  */
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.gallery a{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+
+.gallery a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+
+.gallery a img:hover{
+    transform: scale(1.4);
+}
+/*  */
+
+
+
+
+
+
+
 main{
     margin-top: 2%;
     margin-left: 20%;
@@ -136,75 +180,7 @@ main{
     color: #4d555a;
 }
 
-main img{
-    margin-top: 1rem;
-}
 
-main h1{
-    color: #007aff;
-    margin: 1rem 0 0.6rem;
-}
-
-main h4{
-    margin: 1rem 0 0.5rem;
-}
-
-main .center_heading {
-    margin-top: 5%;
-    text-align: center;
-}
-main li{
-    list-style: disc;
-    list-style-position: inside;
-}
-
-.block_worth{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-
-.block_worth .block_worth_item{
-    position: relative;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-around;  */
-    /* /* align-items: center; */
-    width: 45%;
-    height: 350px;
-    /* text-align: center; */
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0px 0px 10px 1px #495162;
-
-}
-
-.block_worth .block_worth_item h3{
-    position: absolute;
-    color: rgb(248, 248, 248);
-    text-shadow: 4px 3px #727a8b;
-    top: 2%;
-    left: 2%;
-}
-
-.block_worth .block_worth_item p{
-    position: absolute;
-    color: #fff;
-    text-shadow: 1px 1px #727a8b;
-    bottom: 2%;
-    left: 2%;
-}
-
-main .block_worth img{
-    /* filter: invert(1); */
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
 /* ================= END OF MAIN=============================== */
 /* =================FOOTER===================================== */
 footer{

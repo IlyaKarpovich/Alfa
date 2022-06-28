@@ -7,15 +7,8 @@
     <title>Alfa</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
     <link rel="stylesheet" href="style_novosti.css">
-    <script src="wow.min.js"></script>
-    <script>
-        new WOW().init();
-        </script>
+    <link rel="stylesheet" href="lightgallery.min.css">
 </head>
 <body>
         <header>
@@ -63,39 +56,23 @@
     </div>
     <main>
         <h1>ФОТОГАЛЕРЕЯ</h1>
-        
-        <div class="block_worth">
-        <div class="block_worth_item ">
-        <img src="img/pexels-andrea-piacquadio-3771045.jpg">
-        <h3>ЗАГОЛОВОК НОВОСТИ</h3>
-        <p> 01 ЯНВАРЯ 2022</p>
-    </div>
-    <div class="block_worth_item ">
-        <img src="img/pexels-andrea-piacquadio-3771045.jpg">
-        <h3>ЗАГОЛОВОК НОВОСТИ</h3>
-        <p> 01 ЯНВАРЯ 2022</p>
-    </div>
-    <div class="block_worth_item ">
-        <img src="img/pexels-andrea-piacquadio-3771045.jpg">
-        <h3>ЗАГОЛОВОК НОВОСТИ</h3>
-        <p> 01 ЯНВАРЯ 2022</p>
-    </div>
-    <div class="block_worth_item ">
-        <img src="img/pexels-andrea-piacquadio-3771045.jpg">
-        <h3>ЗАГОЛОВОК НОВОСТИ</h3>
-        <p> 01 ЯНВАРЯ 2022</p>
-    </div>
-    <div class="block_worth_item ">
-        <img src="img/pexels-andrea-piacquadio-3771045.jpg">
-        <h3>ЗАГОЛОВОК НОВОСТИ</h3>
-        <p> 01 ЯНВАРЯ 2022</p>
-    </div>
-    <div class="block_worth_item ">
-        <img src="img/pexels-andrea-piacquadio-3771045.jpg">
-        <h3>ЗАГОЛОВОК НОВОСТИ</h3>
-        <p> 01 ЯНВАРЯ 2022</p>
-    </div>
-    </div>
+<div class="gallery">
+    <a href="gallery/1.jpg">
+        <img src="gallery/1.jpg">
+    </a>
+
+    <a href="gallery/2.jpg">
+        <img src="gallery/2.jpg">
+    </a>
+
+    <a href="gallery/3.jpg">
+        <img src="gallery/3.jpg">
+    </a>
+
+    <a href="gallery/4.jpg">
+        <img src="gallery/4.jpg">
+    </a>
+</div>
     </main>
     <footer>
         <ul>
@@ -107,7 +84,9 @@
             </li>
         </ul>
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script_novosti.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallery'));
+    </script>
 </body>
 </html>
