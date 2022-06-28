@@ -135,6 +135,8 @@ main{
     margin-left: 20%;
     margin-right: 20%;
     color: #4d555a;
+    background-image: url(img/fon55.png);
+    background-repeat:repeat;
 }
 
 main .corp_pic{
