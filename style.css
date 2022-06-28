@@ -133,14 +133,13 @@ color: inherit;
     background: url(img/bg-slide-title.png) ;
     background-position: cover;
     filter: invert(1);
-    /* transform: rotate(); */
 }
 
 .tagline h1{
     position: absolute;
     filter: invert(1);
     font-size: 2rem;
-    right: 8%;
+    right: 7%;
     top: 75%;
     font-weight: 500;
 }
