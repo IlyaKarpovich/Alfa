@@ -175,6 +175,7 @@ main li{
     justify-content: flex-start;
     align-items: center;
     width: 30%;
+    background: #fff;
     /* height: 30%; */
     text-align: center;
     margin-top: 2%;
