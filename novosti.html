@@ -7,8 +7,15 @@
     <title>Alfa</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
     <link rel="stylesheet" href="style_novosti.css">
-    <link rel="stylesheet" href="lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/fonts/lg.ttf">
+<style>
+    @font-face {
+        font-family: "lg";
+        src: url(fonts/lg.ttf);
+    }
+</style>
 </head>
 <body>
         <header>
@@ -94,7 +101,9 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script>
-        lightGallery(document.querySelector('.gallery'));
+        lightGallery(document.querySelector('.gallery'),{
+            controls: true
+        });
     </script>
 </body>
 </html>

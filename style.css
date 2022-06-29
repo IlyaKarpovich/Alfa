@@ -174,11 +174,12 @@ color: inherit;
 .tagline h1{
     position: absolute;
     /* filter: invert(1); */
-    font-size: 2rem;
+    font-size: calc(1em + 1vw);
     right: 3%;
     top: 45%;
     font-weight: 500;
     color: #cedde6;
+
 }
 
 
@@ -231,4 +232,22 @@ footer ul{
 footer ul li{
     cursor: pointer;
     width: 23%;
+}
+
+
+
+/* 
+@media screen and (min-width: 1024px) {
+    .tagline h1{
+    color: red;
+    font-size: 130%;
+    }
+} */
+
+@media (min-width: 1024px) and (max-width: 2100px) {
+    .tagline h1{
+    /* color: red; */
+font-size: calc(20px + (39 - 20) * ( (100vw - 1024px) / ( 1900 - 1024) ));;
+    
+    }
 }
