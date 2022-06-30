@@ -166,6 +166,7 @@ main h1{
     margin-bottom: 2%;
     box-shadow: 0px 0px 10px 1px #495162;
     transition: .4s ease;
+    background: #fff;
 }
 
 .block_production_item a{
