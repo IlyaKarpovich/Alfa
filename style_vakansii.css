@@ -186,3 +186,14 @@ footer ul li{
     cursor: pointer;
 }
 /* =================END OF FOOTER===================================== */
+
+
+
+
+@media (min-width: 1024px) and (max-width: 2100px) {
+    nav ul li {
+        /* color: red; */
+    font-size: calc(12px + (18 - 12) * ( (100vw - 1024px) / ( 1900 - 1024) ));
+        
+        }
+}
