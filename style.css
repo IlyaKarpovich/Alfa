@@ -37,9 +37,7 @@ header .logo a{
     height: 100%;
 }
 
-header .logo a img{
-height: 5%;
-}
+
 
 nav{
     width: 80%;
@@ -150,6 +148,12 @@ color: inherit;
 );
 }
 
+.tagline img{
+    z-index: 3333333;
+    object-fit: cover;
+}
+
+
 .tagline_shadow{
     top: 0;
     right: 0;
@@ -157,15 +161,15 @@ color: inherit;
     height: 100%;
     width: 39%;
     z-index: 333;
-    /* background: url(img/bg-slide-title.png) ; */
+    background: url(img/bg-slide-title.png) ;
     background: #99999908;
     background-position: left;
     background-size: cover;
     clip-path: polygon(
-    48% 0%, /* left top */
-    100% 0%, /* right top */ 
-    100% 100%, /* right bottom */
-    7% 100% /* left bottom */
+    48% 0%, left top
+    100% 0%, right top 
+    100% 100%, right bottom
+    7% 100% left bottom
 );
 }
 
@@ -185,7 +189,7 @@ color: inherit;
     right: 3%;
     top: 75%;
     font-weight: 500;
-    color: #ffffff;
+    color: #0157b2;
     /* color: #005cbf;/ */
 
 
