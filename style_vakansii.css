@@ -21,6 +21,7 @@ body{
 }
 
 
+
 /* =================HEADER====================== */
 
 header{
@@ -30,7 +31,7 @@ header{
     justify-content: center;
     width: 100%;
     height: 10%;
-    border-bottom:1px solid #4d555a;
+    /* border-bottom:1px solid #4d555a; */
     color:  #005cbf;
     background: rgb(215, 215, 215);
     z-index: 2;
@@ -166,11 +167,19 @@ main p span{
     color:  #005cbf;
 }
 
+
+.shtamp {
+    right: 5%;
+    top: 93%;
+    transform: rotate(-5deg);
+    position: absolute;
+    }
+
 /* ================= END OF MAIN=============================== */
 /* =================FOOTER===================================== */
 footer{
     /* position: fixed; */
-
+    bottom: 0%;
     width: 100%;
     height: 8%;
     background: #4d555ab9;

@@ -30,7 +30,7 @@ header{
     justify-content: center;
     width: 100%;
     height: 10%;
-    border-bottom:1px solid #4d555a;
+    /* border-bottom:1px solid #4d555a; */
     color:  #005cbf;
     background: rgb(215, 215, 215);
     z-index: 2;
@@ -138,6 +138,7 @@ color: inherit;
 /* =================END OF SWIPER============================= */
 /* =================MAIN====================================== */
 main{
+    /* position: relative; */
     margin-top: 2%;
     margin-left: 20%;
     margin-right: 20%;
@@ -196,6 +197,14 @@ main .block_worth img{
 main .block_worth p{
     padding-bottom: 5%;
 }
+
+.shtamp {
+    display: none;
+    /* right: 2%; */
+    /* top: 165%; */
+    /* transform: rotate(-5deg); */
+    /* position: absolute; */
+    }
 /* ================= END OF MAIN=============================== */
 /* =================FOOTER===================================== */
 footer{
