@@ -89,10 +89,10 @@ color: inherit;
     border-bottom:3px solid #0404ea;
     /* text-align: center; */
 }
-.swiper-wrapper{
+/* .swiper-wrapper1{ */
     /* position: relative; */
-}
-.swiper-slide{
+/* } */
+/* .swiper-slide{ */
     /* position: relative; */
     /* font-size: 18px; */
     /* background: #fff; */
@@ -110,7 +110,7 @@ color: inherit;
     -ms-flex-align: center;
     -webkit-align-items: center; */
     /* align-items: center; */
-}
+/* } */
 
 .swiper .swiper-wrapper .swiper-slide img{
     width: 100%;
@@ -122,13 +122,13 @@ color: inherit;
 
 
 /* 2 swiper */
-.mySwiper {
+.swiper2 {
     overflow: hidden;
     width: 100%;
     height: 100%;
 }
 
-.mySwiper .swiper-slide {
+.swiper2 .swiper-wrapper .swiper-slide {
     text-align: center;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -145,11 +145,12 @@ color: inherit;
     align-items: center;
 }
 
-.mySwiper .swiper-slide img {
+.swiper2 .swiper-wrapper .swiper-slide img {
     /* display: block; */
-    /* width: 100%;
-    height: 100%; */
-    object-fit: cover;
+    /* width: 90%;
+    height: 90%; */
+    /* object-position: center top ; */
+    /* object-fit: cover; */
 }
 
 /* .swiper .swiper-wrapper .swiper-slide span{
