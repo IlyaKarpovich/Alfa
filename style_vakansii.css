@@ -169,8 +169,9 @@ main p span{
 
 
 .shtamp {
-    right: 5%;
-    top: 93%;
+    display: none;
+    right: 8%;
+    top: 100%;
     transform: rotate(-5deg);
     position: absolute;
     }

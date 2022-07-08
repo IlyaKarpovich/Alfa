@@ -59,14 +59,26 @@
         
 
         
-        <div class="corp_pic">
-            <img src="img/ref1.png"  width="120px" height="115px">
-            <img src="img/ref2.png"  width="120px" height="115px">
-            <img src="img/ref3.png"  width="120px" height="115px">
-            <img src="img/ref4.png"  width="120px" height="115px">
-            <img src="img/ref5.png"  width="120px" height="115px">
-            <img src="img/ref6.png"  width="120px" height="115px">
-        </div>
+        <!-- <div class="corp_pic"> -->
+            <div class="mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/ref1.png" width="100px" height="100px"></div>
+                <div class="swiper-slide"><img src="img/ref2.png" width="100px" height="100px"></div>
+                <div class="swiper-slide"><img src="img/ref3.png" width="100px" height="100px"></div>
+                <div class="swiper-slide"><img src="img/ref4.png" width="100px" height="100px"></div>
+                <div class="swiper-slide"><img src="img/ref5.png" width="100px" height="100px"></div>
+                <div class="swiper-slide"><img src="img/ref6.png" width="100px" height="100px"></div>
+                <!-- <div class="swiper-slide"><img src="img/ref7.png" width="100px" height="100px"></div> -->
+                <div class="swiper-slide"><img src="img/ref8.png" width="100px" height="100px"></div>
+                <div class="swiper-slide"><img src="img/ref9.png" width="100px" height="100px"></div>
+                <div class="swiper-slide"><img src="img/ref10.png" width="100px" height="100px"></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+
+
+        <!-- </div> -->
 
         <details>
             <summary>Ленточные вакуум-фильтры</summary>
@@ -310,12 +322,51 @@
         </ul>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="/script_o_comp.js"></script>
+    <!-- <script src="/script_o_comp.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script>
         lightGallery(document.querySelector('.gallery'),{
             controls: true
         });
+    </script>
+    <script>
+        //
+        var swiper = new Swiper(".mySwiper", {
+        speed: 3000,
+        autoplay: {
+            // reverseDirection:true,
+        disableOnInteraction:false,
+        delay: 5000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        breakpoints: {
+        "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+        },
+        "@1.50": {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        },
+        },
+    });
     </script>
 </body>
 </html>
