@@ -26,8 +26,14 @@ header{
     width: 100%;
     height: 12%;
     /* border-bottom:1px solid #4d555a; */
-    background: rgb(215, 215, 215);
+    background: rgba(215, 215, 215, 0.389);
     z-index: 2;
+    transition: .4s;
+}
+
+header:hover{
+        /* border-bottom:1px solid #4d555a; */
+        background: rgba(215, 215, 215, 0.889);
 }
 
 header .logo a{
@@ -74,23 +80,23 @@ nav ul li a:visited{
 color: inherit;
 }
 
-.swiper {
+/* .swiper { */
     /* position: relative; */
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     text-align: center;
-}
-.swiper-wrapper{
+} */
+/* .swiper-wrapper{ */
     /* position: relative; */
-}
-.swiper-slide{
+/* } */
+/* .swiper-slide{ */
     /* position: relative; */
     /* font-size: 18px; */
     /* background: #fff; */
 
     /* Center slide text vertically */
     /* display: -webkit-box;*/
-    display: -ms-flexbox;
+    /* display: -ms-flexbox;
     display: -webkit-flex; 
     display: flex;
     -webkit-box-pack: center;
@@ -101,25 +107,25 @@ color: inherit;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-}
+} */
 
-.swiper .swiper-wrapper .swiper-slide h1{
-    position: absolute;
-    width: 200px;
-    height: 200px;
+/* .swiper .swiper-wrapper .swiper-slide h1{ */
+    /* position: absolute; */
+    /* width: 200px; */
+    /* height: 200px; */
     /* padding: 45px; */
-    top: 4%;
-    right: 3%;
+    /* top: 4%; */
+    /* right: 3%; */
     /* background: url(img/fon-mksalf-03.jpg); */
-}
+/* } */
 
-.swiper .swiper-wrapper .swiper-slide img{
+/* .swiper .swiper-wrapper .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit:cover;
     object-position: center;
     
-}
+} */
 
 /* .swiper .swiper-wrapper .swiper-slide span{
     display: block;
@@ -139,7 +145,7 @@ color: inherit;
 
 
 
-.tagline{
+/* .tagline{
     top: 0;
     right: 0;
     position: absolute;
@@ -148,22 +154,22 @@ color: inherit;
     z-index: 3333;
     background: url(img/fon-3.png);
     /* background: #005cbf; */
-    background-position: right;
-    background-size: cover;
-    clip-path: polygon(
-    0% 0%, /* left top */
-    100% 0%, /* right top */ 
-    100% 100%, /* right bottom */
-    0% 100% /* left bottom */
-);
-}
+    /* background-position: right; */
+    /* background-size: cover; */
+    /* clip-path: polygon( */
+    /* 0% 0%, left top */
+    /* 100% 0%, right top  */
+    /* 100% 100%, right bottom */
+    /* 0% 100% left bottom */
+/* ); */
+/* } */
 
-.tagline img{
+/* .tagline img{
     z-index: 3333333;
     object-fit: cover;
-}
+} */
 
-
+/* 
 .tagline_shadow{
     top: 0;
     right: 0;
@@ -181,7 +187,7 @@ color: inherit;
     100% 100%, right bottom
     7% 100% left bottom
 );
-}
+}  */
 
 /* .tagline::before{
     content: "";
@@ -192,22 +198,53 @@ color: inherit;
 
 
 
-.tagline h1{
-    position: absolute;
+/* .tagline h1{ */
+    /* position: absolute; */
     /* filter: invert(1); */
-    font-size: calc(1em + 1vw);
-    right: 3%;
-    top: 75%;
-    font-weight: 500;
-    color: #0157b2;
+    /* font-size: calc(1em + 1vw); */
+    /* right: 3%; */
+    /* top: 75%; */
+    /* font-weight: 500; */
+    /* color: #0157b2; */
     /* color: #005cbf;/ */
 
 
+/* } */
+.video-box { 
+    position: fixed; 
+    top: 0; 
+    left: 0;  
+    /* background: url(/images/video-bg.jpg) no-repeat #333333;   */
+    /* background-size: cover;  */
+    overflow: hidden;  z-index: 1; 
+    width: 100%; 
+    height:100%;
 }
 
+.video-box video {  
+    position: absolute;  
+    top: 0;  
+    left: 0; 
+    width: auto;  
+    height: auto;  
+    min-width: 100%;   
+    min-height: 100%;   
+}
+
+@supports (object-fit: cover) {  
+    .video-box video {    
+      top: 0;    
+     left: 0;    
+    width: 100%;    
+  height: 100%;    
+ object-fit: cover;  
+    } 
+} 
 
 
 .news_block {
+    position: absolute;
+    bottom: 0;
     padding: 2% 0 2% 0;
     background: #4d555a;
     width: 100%;
@@ -216,6 +253,7 @@ color: inherit;
     justify-content: space-evenly;
     align-items: center;
     color: #cedde6;
+    z-index: 4;
 }
 .news_block_item {
     width: 27%;
@@ -246,7 +284,7 @@ footer{
     width: 100%;
     height: 10%;
     background: #4d555ab8;
-    z-index: 2;
+    z-index: 4;
 }
 
 footer ul{
@@ -276,6 +314,10 @@ footer ul li{
 } */
 
 @media (min-width: 1024px) and (max-width: 2100px) {
+    .logo a img {
+        /* filter: invert(1); */
+    }
+
     .tagline h1{
     /* color: red; */
 font-size: calc(20px + (39 - 20) * ( (100vw - 1024px) / ( 1900 - 1024) ));;

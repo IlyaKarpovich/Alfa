@@ -29,16 +29,16 @@ define('MAX_FILE_SIZE', 512 * 1024);
 define('UPLOAD_PATH', dirname(__FILE__) . '/uploads/');
 
 // отправлять письмо
-define('HAS_SEND_EMAIL', true);
+define('jabelswiftt@gmail.com', true);
 // добавить ли прикреплённые файлы в тело письма в виде ссылок
 define('HAS_ATTACH_IN_BODY', true);
 define('EMAIL_SETTINGS', [
   'addresses' => ['jabelswiftt@gmail.com'], // кому необходимо отправить письмо
-  'from' => ['no-reply@domain.com', 'Имя сайта'], // от какого email и имени необходимо отправить письмо
+  'from' => ['jabelswiftt@gmail.com', 'МКСА'], // от какого email и имени необходимо отправить письмо
   'subject' => 'Сообщение с формы обратной связи', // тема письма
-  'host' => 'ssl://smtp.yandex.ru', // SMTP-хост
-  'username' => 'name@yandex.ru', // // SMTP-пользователь
-  'password' => '*********', // SMTP-пароль
+  'host' => 'smtp.gmail.com', // SMTP-хост
+  'username' => 'jabelswiftt@gmail.com', // // SMTP-пользователь
+  'password' => 'Karpovsk19988', // SMTP-пароль
   'port' => '465' // SMTP-порт
 ]);
 define('HAS_SEND_NOTIFICATION', false);
