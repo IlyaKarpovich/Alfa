@@ -236,10 +236,46 @@ footer ul li{
 /* =================END OF FOOTER===================================== */
 
 
+@media (min-width: 768px) and (max-width: 1024px){
+    header{
+        height: 9%;
+    }
+    .logo a img {
+        /* filter: invert(1); */
+        width:calc(120px + (180 - 120) * ( (100vw - 768px) / ( 1023 - 768) ));
+    }
+
+    nav ul li{
+        font-size: calc(10px + (12 - 10) * ( (100vw - 768px) / ( 1023 - 768) ));
+    }
+
+    nav ul li span{
+        font-size: calc(8px + (10 - 8) * ( (100vw - 768px) / ( 1023 - 768) ));
+    }
+}
+
+
 @media (min-width: 1024px) and (max-width: 2100px) {
+    .logo a img {
+        width:calc(180px + (240 - 180) * ( (100vw - 1024px) / ( 2100 - 1024) ));
+    }
     nav ul li {
         /* color: red; */
-    font-size: calc(12px + (18 - 12) * ( (100vw - 1024px) / ( 1900 - 1024) ));
+    font-size: calc(12px + (18 - 12) * ( (100vw - 1024px) / ( 2100 - 1024) ));
+        }
+}
+
+@media (min-width: 2100px) and (max-width: 2560px) {
+    .logo a img {
+        width:calc(280px + (300 - 280) * ( (100vw - 2100px) / ( 2560 - 2100) ));
+    }
+    nav ul li {
+        /* color: red; */
+    font-size: calc(24px + (26 - 24) * ( (100vw - 2100px) / ( 2560 - 2100) ));
         
+        }
+
+        nav ul li span{
+            font-size: calc(18px + (24 - 18) * ( (100vw - 2100px) / ( 2560 - 2100) ));
         }
 }

@@ -22,3 +22,17 @@
     // },
 
 // });
+
+function x() {
+    const header = document.querySelector('header');
+    const logo = document.querySelector('.logo');
+    const menu = document.querySelector('.menu');
+    const burger = document.querySelector('.btn-menu');
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('burger_active');
+        menu.classList.toggle('menu_active');
+        logo.classList.toggle('logo_hide');
+        header.classList.toggle('header_active');
+    })
+};
+x();
